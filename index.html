@@ -7,11 +7,20 @@
   </head>
   <body>
     <div class="contact-container">
-      <form action="" class="contact-left">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
         <div class="contact-left-title">
           <h2>Get in touch</h2>
           <hr />
         </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="bfe62fab-6b13-47a9-ac3e-945c4741f551"
+        />
         <input
           type="text"
           name="name"
@@ -27,9 +36,13 @@
           required
         />
         <textarea name="message" class="contact-inputs" required></textarea>
-        <button type="submit">Submit <img src="assets/arrow-icon.png" alt=""><button>
+        <button type="submit">
+          Submit <img src="assets/arrow_icon.png" alt="" />
+        </button>
       </form>
-      <div class="contact-right"></div>
+      <div class="contact-right">
+        <img src="assets/right_img.png" alt="" />
+      </div>
     </div>
   </body>
 </html>
